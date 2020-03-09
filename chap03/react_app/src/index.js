@@ -6,7 +6,7 @@ import * as serviceWorker from './serviceWorker';
 
 const root = document.getElementById('root');
 ReactDOM.render(
-    <App msg="Hello App." />,
+    <App />,
     root
 );
 
