@@ -60,6 +60,8 @@ class Button extends Component {
     doAction = (e) => {
         if (e.shiftKey) {
             this.props.dispatch({ type: 'DECREMENT' });
+        } else if (e.ctrlKey) {
+            this.props.dispatch({ type: 'RESER' });
         } else {
             this.props.dispatch({ type: 'INCREMENT' });
         }
