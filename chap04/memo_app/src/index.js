@@ -13,6 +13,8 @@ import { memoReducer } from './memo/Store';
 const persistConfig = {
     key: 'memo',
     storage,
+    blacklist: ['message', 'mode', 'fdata'],
+    whitelist: ['data']
 }
 
 // パーシストレデューサーの作成
@@ -32,3 +34,5 @@ ReactDOM.render(
     </Provider>,
     root
 );
+
+export default pstore;
