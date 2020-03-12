@@ -4,7 +4,7 @@ import './App.css';
 import Memo from './memo/Memo';
 import AddForm from './memo/AddForm';
 import FindForm from './memo/FindForm';
-import DelForm from './memp/DelForm';
+import DelForm from './memo/DelForm';
 
 // App コンポーネント
 class App extends Component {
@@ -36,4 +36,4 @@ class App extends Component {
     }
 }
 
-export default App;
+export default connect()(App);

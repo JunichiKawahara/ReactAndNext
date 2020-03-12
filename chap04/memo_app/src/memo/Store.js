@@ -46,6 +46,7 @@ function addReduce(state, action) {
 function findReduce(state, action) {
     let f = action.find;
     let fdata = [];
+
     state.data.forEach((value) => {
         if (value.message.indexOf(f) >= 0) {
             fdata.push(value);
@@ -77,7 +78,7 @@ function deleteReduce(state, action) {
 export function addMemo(text) {
     return {
         type: 'ADD',
-        messsage: text
+        message: text
     };
 }
 
